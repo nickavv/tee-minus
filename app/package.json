@@ -15,8 +15,11 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "dayjs": "^1.10.7",
     "gatsby": "^3.14.3",
+    "gatsby-plugin-use-query-params": "^1.0.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "use-query-params": "^1.2.3"
   }
 }

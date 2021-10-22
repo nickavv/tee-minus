@@ -3,5 +3,7 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "tee-minus",
   },
-  plugins: [],
+  plugins: [
+      "gatsby-plugin-use-query-params"
+  ],
 };
