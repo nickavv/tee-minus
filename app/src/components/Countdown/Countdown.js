@@ -26,6 +26,9 @@ class Countdown extends Component {
         const daysElapsed = Math.ceil(dayjs().diff(startTime, 'days'));
         const daysLeft = -1 * Math.ceil(dayjs().diff(endTime, 'days'));
 
+        console.log(daysElapsed);
+        console.log(daysLeft);
+
         let dayString = '';
         if (daysLeft > 1) {
             dayString = 'days left';
