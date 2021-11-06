@@ -39,17 +39,16 @@ class Countdown extends Component {
 
         // CircularProgressbar needs the percentage in a 0-100 scale, not 0-1
         const percentage = (daysElapsed / (daysElapsed + daysLeft)) * 100;
-        console.log(percentage);
 
         return (
             <div id='countdown'>
                 <CircularProgressbarWithChildren
                     className='progress-bar'
                     value={percentage}>
-                <div className='inner-text'>
-                    <div className='number'>{Math.abs(daysLeft)}</div>
-                    <div className='text'>{dayString}</div>
-                </div>
+                    <div className='inner-text'>
+                        <div className='number'>{Math.abs(daysLeft)}</div>
+                        <div className='text'>{dayString}</div>
+                    </div>
                 </CircularProgressbarWithChildren>
             </div>
         )
