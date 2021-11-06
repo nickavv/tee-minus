@@ -26,9 +26,6 @@ class Countdown extends Component {
         const daysElapsed = Math.ceil(dayjs().diff(startTime, 'days'));
         const daysLeft = -1 * Math.ceil(dayjs().diff(endTime, 'days'));
 
-        console.log(daysElapsed);
-        console.log(daysLeft);
-
         let dayString = '';
         if (daysLeft > 1) {
             dayString = 'days left';
@@ -42,6 +39,7 @@ class Countdown extends Component {
 
         // CircularProgressbar needs the percentage in a 0-100 scale, not 0-1
         const percentage = (daysElapsed / (daysElapsed + daysLeft)) * 100;
+        console.log(percentage);
 
         return (
             <div id='countdown'>
