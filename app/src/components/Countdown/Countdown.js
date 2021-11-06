@@ -40,8 +40,8 @@ class Countdown extends Component {
         // CircularProgressbar needs the percentage in a 0-100 scale, not 0-1
         const percentage = (daysElapsed / (daysElapsed + daysLeft)) * 100;
 
-        const diameter = Math.PI * 2 * pathRadius;
-        const gapLength = (1 - dashRatio) * diameter;
+        const diameter = Math.PI * 2 * 46;
+        const gapLength = (1 - 0.81) * diameter;
         console.log(`${gapLength}px`);
 
         return (
