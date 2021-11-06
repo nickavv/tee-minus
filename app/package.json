@@ -8,18 +8,20 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "develop": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby develop",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby develop",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby build",
+    "serve": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby serve",
+    "clean": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby clean"
   },
   "dependencies": {
     "dayjs": "^1.10.7",
-    "gatsby": "^3.14.3",
+    "gatsby": "^4.1.0",
     "gatsby-plugin-use-query-params": "^1.0.1",
     "react": "^17.0.1",
+    "react-circular-progressbar": "^2.0.4",
     "react-dom": "^17.0.1",
+    "typeface-comfortaa": "^1.1.13",
     "use-query-params": "^1.2.3"
   }
 }
