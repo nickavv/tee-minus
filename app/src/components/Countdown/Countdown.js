@@ -39,6 +39,7 @@ class Countdown extends Component {
 
         // CircularProgressbar needs the percentage in a 0-100 scale, not 0-1
         const percentage = (daysElapsed / (daysElapsed + daysLeft)) * 100;
+        console.log(Math.PI);
 
         return (
             <div id='countdown'>
