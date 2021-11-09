@@ -2,27 +2,41 @@
   "name": "tee-minus",
   "version": "1.0.0",
   "private": true,
-  "description": "tee-minus",
-  "author": "nickavv",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby develop",
-    "start": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby develop",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby build",
-    "serve": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby serve",
-    "clean": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby clean"
-  },
   "dependencies": {
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
     "dayjs": "^1.10.7",
-    "gatsby": "^4.1.0",
-    "gatsby-plugin-use-query-params": "^1.0.1",
     "react": "^17.0.2",
     "react-circular-progressbar": "^2.0.4",
     "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
     "typeface-comfortaa": "^1.1.13",
-    "use-query-params": "^1.2.3"
+    "use-query-params": "^1.2.3",
+    "web-vitals": "^1.1.2"
   },
-  "engines": { "node": ">=17.0.0" }
+  "scripts": {
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider; react-scripts start",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; react-scripts build",
+    "test": "export NODE_OPTIONS=--openssl-legacy-provider; react-scripts test",
+    "eject": "export NODE_OPTIONS=--openssl-legacy-provider;  react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
